@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Set background image for the body */
+        body {
+            font-family: Arial, sans-serif;
+            color: #020101;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-image: url('https://www.bdtask.com/blog/uploads/Top_10_Advantages_of_Restaurant_Management_System.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-position: center center; /* Centers the image */
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        /* Container for the scrolling text */
+        .scrolling-container {
+            overflow: hidden; /* Hide the text outside the container */
+            width: 100%; /* Ensure it takes full width */
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Add animation to make the text scroll horizontally */
+        .moving-text {
+            display: inline-block;
+            white-space: nowrap;
+            font-size: 48px; /* Increased font size for larger text */
+            font-weight: bold;
+            color: red; /* Red color for the text */
+            padding-right: 100%; /* Ensure text starts off the right side */
+            animation: move-text 10s linear infinite; /* Smooth scrolling animation */
+        }
+
+        /* Define the scrolling animation */
+        @keyframes move-text {
+            0% {
+                transform: translateX(100%); /* Start from the right */
+            }
+            100% {
+                transform: translateX(-100%); /* Move to the left */
+            }
+        }
+
+        /* Header with semi-transparent background */
+        header {
+            background-color: rgba(131, 125, 125, 0.8); /* Semi-transparent gray */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Section with semi-transparent white background */
+        section {
+            padding: 2rem;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            border-radius: 8px;
+        }
+
+        /* Footer with semi-transparent background */
+        footer {
+            background-color: rgba(125, 125, 131, 0.8); /* Semi-transparent gray */
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Restaurant Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="books.html">Book a Table</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Moving text inside a div that moves horizontally -->
+        <div class="scrolling-container">
+            <span class="moving-text">Welcome to Our Restaurant</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Restaurant Management System</p>
+    </footer>
+</body>
+</html>

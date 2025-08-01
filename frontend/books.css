@@ -1,0 +1,21 @@
+/* Header and Title */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Adjust h1 and h2 margins to ensure consistent spacing */
+h1 {
+    font-size: 32px;
+    margin-top: 20px;
+    text-align: center; /* Ensure center alignment */
+}
+
+h2 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-top: 10px; /* Slightly reduced margin for better spacing */
+    text-align: center; /* Ensure center alignment */
+}

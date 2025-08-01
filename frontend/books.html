@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Manage Books</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Manage Orders</a></li>
+        </ul>
+    </nav>
+    <h1>Manage Dishes</h1>
+
+    <h2>Add Dish</h2>
+    <form id="bookForm">
+        <input type="text" id="title" placeholder="Dish Name" required>
+        <input type="text" id="author" placeholder="Cuisine Type" required>
+        <input type="text" id="description" placeholder="Dish Description">
+        <input type="text" id="genre" placeholder="Price">
+        <button type="submit">Add Dish</button>
+    </form>
+
+    <h2>All Dishes</h2>
+    <button id="fetchAllBooksButton">Fetch All Dishes</button>
+    <ul id="bookList"></ul>
+
+    <h2>Fetch Dish by ID</h2>
+    <input type="text" id="fetchId" placeholder="Dish ID" required>
+    <button id="fetchBookButton">Fetch Dish</button>
+    <div id="fetchedBook"></div>
+
+    <h2>Update Dish</h2>
+    <input type="text" id="updateId" placeholder="Dish ID" required>
+    <input type="text" id="updateTitle" placeholder="New Dish Name">
+    <input type="text" id="updateAuthor" placeholder="New Cuisine Type">
+    <input type="text" id="updateDescription" placeholder="New Dish Description">
+    <input type="text" id="updateGenre" placeholder="New Price">
+    <button id="updateButton">Update Dish</button>
+
+    <form id="bookForm">
+    <h2>Delete Dish</h2>
+    <input type="text" id="deleteId" placeholder="Dish ID" required>
+    <button id="deleteButton">Delete Dish</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
